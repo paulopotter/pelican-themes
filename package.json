@@ -1,0 +1,21 @@
+{
+  "name": "pelican-themes",
+  "version": "0.1.0",
+  "description": "Meus temas personalizados para o Pelican",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/paulopotter/pelican-themes.git"
+  },
+  "author": "Paulo Oliveira",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/paulopotter/pelican-themes/issues"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  }
+}
