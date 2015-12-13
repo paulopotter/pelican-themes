@@ -1,14 +1,79 @@
 /* RESET */
+$primary-color: #56b3d7;
+$secundary-color: #144355;
+$third_color: #b5deee;
+$svg: '../svg/';
+
+// @font-face {
+//   font-family: 'InputMono Light';
+//   src: url('../font/InputMono-Light.ttf')  format('truetype'),
+// }
 
 * {
-    margin:0;
-    padding: 0;
-    color:black;
-    text-decoration: none;
+  color:black;
+  margin:0;
+  padding: 0;
+  text-decoration: none;
+  // font-family: 'InputMono Light', Arial;
+  list-style: none;
 }
 
 html {
-    font-size: 16px;
+  font-size: 16px;
+}
+
+a {
+  color: $primary-color;
+
+  &:visited {
+    color: $primary-color;
+  }
+
+  &:hover {
+    color: $secundary-color;
+  }
+}
+
+
+.header_site {
+  background-color: $primary-color;
+  height: 250px;
+  text-align: center;
+  width: 100%;
+}
+
+.menu_site {
+  a {
+    color: $secundary-color;
+    &:hover {
+      color: $third_color;
+    }
+  }
+  .social {
+    a {
+      background-position: top left;
+      background-size: 100%;
+      clear: both;
+      display: block;
+      float: left;
+      height: 3em;
+      margin: auto 10px;
+      width: 3em;
+
+      &.sc {
+        &-GITHUB {
+          background-image: url($svg + 'github.svg');
+        }
+        &-LinkedIn {
+          background-image: url($svg + 'linkedin.svg');
+        }
+        &-Twitter {
+          background-image: url($svg + 'twitter.svg');
+        }
+      }
+    }
+  }
+
 }
 /*
 *{

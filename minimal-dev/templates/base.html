@@ -2,7 +2,7 @@
 <html lang="{{ DEFAULT_LANG }}">
 <head>
   <meta charset="utf-8" />
-  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/style.css">
+  <link rel="stylesheet" type="text/css" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/style.min.css">
   <title>{{ SITENAME }}{% block title %}{% endblock %}</title>
 
   {% block meta %}
@@ -15,11 +15,6 @@
 <body>
   <header class='header_site'>
     <h1>{{ SITENAME }}</h1>
-
-    <form action="" class="search-site" method="get">
-      <input type="text" name="q" class="search-site-input" />
-      <input type="button" class='search-site-button'>
-    </form>
 
     <nav class="menu_site">
       <ul class="list">
