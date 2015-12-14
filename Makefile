@@ -1,13 +1,24 @@
+
+## Node ##
+install_node_osx: 
+	brew install node
+
 install_node_ubuntu:
 	sudo apt-get install nodejs
 
+create_symbolic_link_nodejs:
+	sudo ln -s /usr/bin/nodejs /usr/bin/node
+
+### npm ###
 install_npm_ubuntu:
 	sudo apt-get install npm
 
 install_npm_dependencies:
 	npm install 
-create_symbolic_link_nodejs:
-	sudo ln -s /usr/bin/nodejs /usr/bin/node
+
+### Gulp ###
+install_gulp: 
+	npm install -g gulp
 
 install_gulp_global_ubuntu:
 	sudo npm install -g gulp
