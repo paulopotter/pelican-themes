@@ -36,8 +36,11 @@ a {
 
 
 .header_site {
+  align-items:center;
   background-color: $primary-color;
-  height: 250px;
+  display:flex;
+  height: 25vh;
+  justify-content:center;
   text-align: center;
   width: 100%;
 }
