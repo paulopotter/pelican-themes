@@ -14,7 +14,7 @@
 </head>
 <body>
   <header class='header_site'>
-    <h1>{{ SITENAME }}</h1>
+    <h1><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1>
 
     <nav class="menu_site">
       <ul class="list">
@@ -30,9 +30,10 @@
       {% endfor %}
     </ul>
   </header>
-
+<div class="wrapper">
   {% block content %}
   {% endblock %}
+</div>
 
 </body>
 </html>

@@ -24,27 +24,43 @@ a {
   justify-content: center;
   text-align: center;
   width: 100%; }
+  .header_site a {
+    color: #144355; }
+    .header_site a:hover {
+      color: #b5deee; }
 
 .menu_site a {
   color: #144355; }
   .menu_site a:hover {
     color: #b5deee; }
 
-.social a {
-  background-position: top left;
-  background-size: 100%;
-  clear: both;
-  display: block;
-  float: left;
-  height: 3em;
-  margin: auto 10px;
-  width: 3em; }
-  .social a.sc-GITHUB {
-    background-image: url("../svg/github.svg"); }
-  .social a.sc-LinkedIn {
-    background-image: url("../svg/linkedin.svg"); }
-  .social a.sc-Twitter {
-    background-image: url("../svg/twitter.svg"); }
+.social {
+  clear: both; }
+  .social li {
+    display: inline;
+    float: left; }
+  .social a {
+    background-position: top left;
+    background-size: 100%;
+    clear: both;
+    display: block;
+    float: left;
+    height: 3em;
+    margin: auto 10px;
+    width: 3em; }
+    .social a.sc-GITHUB {
+      background-image: url("../svg/github.svg"); }
+    .social a.sc-LinkedIn {
+      background-image: url("../svg/linkedin.svg"); }
+    .social a.sc-Twitter {
+      background-image: url("../svg/twitter.svg"); }
+
+/*** Conteudo ***/
+.wrapper #content {
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  width: 80%; }
 
 /*
 *{
