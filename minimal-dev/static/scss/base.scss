@@ -52,31 +52,30 @@ a {
       color: $third_color;
     }
   }
-  .social {
-    a {
-      background-position: top left;
-      background-size: 100%;
-      clear: both;
-      display: block;
-      float: left;
-      height: 3em;
-      margin: auto 10px;
-      width: 3em;
+}
+.social {
+  a {
+    background-position: top left;
+    background-size: 100%;
+    clear: both;
+    display: block;
+    float: left;
+    height: 3em;
+    margin: auto 10px;
+    width: 3em;
 
-      &.sc {
-        &-GITHUB {
-          background-image: url($svg + 'github.svg');
-        }
-        &-LinkedIn {
-          background-image: url($svg + 'linkedin.svg');
-        }
-        &-Twitter {
-          background-image: url($svg + 'twitter.svg');
-        }
+    &.sc {
+      &-GITHUB {
+        background-image: url($svg + 'github.svg');
+      }
+      &-LinkedIn {
+        background-image: url($svg + 'linkedin.svg');
+      }
+      &-Twitter {
+        background-image: url($svg + 'twitter.svg');
       }
     }
   }
-
 }
 /*
 *{

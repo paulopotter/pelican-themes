@@ -30,7 +30,7 @@ a {
   .menu_site a:hover {
     color: #b5deee; }
 
-.menu_site .social a {
+.social a {
   background-position: top left;
   background-size: 100%;
   clear: both;
@@ -39,11 +39,11 @@ a {
   height: 3em;
   margin: auto 10px;
   width: 3em; }
-  .menu_site .social a.sc-GITHUB {
+  .social a.sc-GITHUB {
     background-image: url("../svg/github.svg"); }
-  .menu_site .social a.sc-LinkedIn {
+  .social a.sc-LinkedIn {
     background-image: url("../svg/linkedin.svg"); }
-  .menu_site .social a.sc-Twitter {
+  .social a.sc-Twitter {
     background-image: url("../svg/twitter.svg"); }
 
 /*
