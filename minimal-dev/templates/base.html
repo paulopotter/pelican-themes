@@ -11,6 +11,11 @@
     <meta name="author" content="{{ AUTHOR }}">
     <meta name="robots" content="">
   {% endblock %}
+
+  {% block js %}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/float-footer.js"></script>
+  {% endblock %}
 </head>
 <body>
   <header class='header_site'>
@@ -33,6 +38,7 @@
 <div class="wrapper">
   {% block content %}
   {% endblock %}
+  <div class='footer-float'> {{ SITENAME }}</div>
 </div>
 
 </body>
