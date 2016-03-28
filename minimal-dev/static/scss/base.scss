@@ -4,21 +4,16 @@ $secundary-color: #144355;
 $third_color: #b5deee;
 $svg: '../svg/';
 
-// @font-face {
-//   font-family: 'InputMono Light';
-//   src: url('../font/InputMono-Light.ttf')  format('truetype'),
-// }
 
 * {
   color:black;
   margin:0;
   padding: 0;
   text-decoration: none;
-  // font-family: 'InputMono Light', Arial;
   list-style: none;
 }
 
-html {
+html, body {
   font-size: 16px;
 }
 
