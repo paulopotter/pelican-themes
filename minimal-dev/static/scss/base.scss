@@ -1,9 +1,5 @@
 /* RESET */
-$primary-color: #56b3d7;
-$secundary-color: #144355;
-$third_color: #b5deee;
-$svg: '../svg/';
-
+@import '_colors';
 
 * {
   color:black;

@@ -1,15 +1,36 @@
+@import '_colors';
+
 #conteudo_home{
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: wrap;
     height: 100%;
     justify-content: space-around;
     margin: 0 auto;
     width: 70rem;
 }
-article {
+.article {
+    align-items: stretch;
     border: 1px dashed black;
+    display: flex;
+    flex-direction: column;
     height: 20rem;
+    justify-content: space-between;
     margin-top: 3rem;
     width: 30rem;
+}
+.article_header {
+    height: 2em;
+}
+.article_body{
     padding: 1.2rem;
+    flex-basis: 15em;
+}
+
+.article_footer{
+    background: $secundary-color;
+    padding: 0.5em;
+
+    a:hover{
+        color: $third-color;
+    }
 }
