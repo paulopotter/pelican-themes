@@ -1,2 +1,14 @@
+#conteudo_home {
+  display: flex;
+  flex-flow: row wrap;
+  height: 100%;
+  justify-content: space-around;
+  margin: 0 auto;
+  width: 70rem; }
+
 article {
-  width: 10rem; }
+  border: 1px dashed black;
+  height: 20rem;
+  margin-top: 3rem;
+  width: 30rem;
+  padding: 1.2rem; }
