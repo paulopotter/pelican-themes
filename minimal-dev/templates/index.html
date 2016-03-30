@@ -6,19 +6,19 @@
         <article class='home_content-article'>
           <header class="home_content-article--header">
 
-            <p class="home_content-article--category">
-              <a href="{{ SITEURL }}/{{ article.category.url }}" class='home_content-article--category-link {{article.category|lower}}'>{{ article.category }}</a>
+            <p class="home_content-article--header-category">
+              <a href="{{ SITEURL }}/{{ article.category.url }}" class='home_content-article--header-category-link logo-{{article.category|lower}}'>{{ article.category }}</a>
             </p>
 
-            <h2 class='home_content-article--title'>
-              <a href="{{ SITEURL }}/{{ article.url }}#{{ article.slug }}" class='home_article-title-link article_link'>{{ article.title }}</a>
+            <h2 class='home_content-article--header-title'>
+              <a href="{{ SITEURL }}/{{ article.url }}#{{ article.slug }}" class='home_content-article--header-title-link'>{{ article.title }}</a>
             </h2>
           </header>
 
           <div class='home_content-article--body'>
             {% if summarise or article.metadata['summary'] or article.metadata['summarize'] %}
               {{ article.summary }}
-                <a class="home_content-article--link_more" href="{{ SITEURL }}/{{ article.url }}#{{ article.slug }}">Continue lendo...</a>
+                <a class="home_content-article--body-link_more" href="{{ SITEURL }}/{{ article.url }}#{{ article.slug }}">Continue lendo...</a>
             {% else %}
               {{ article.content }}
             {% endif %}

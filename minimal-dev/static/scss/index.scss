@@ -1,6 +1,6 @@
 @import '_colors';
 
-.home_content{
+.home_content {
     display: flex;
     flex-flow: wrap;
     height: 100%;
@@ -19,12 +19,34 @@
         width: 30rem;
 
         &--header {
-            height: 2em;
+            display: flex;
+            height: 4rem;
+            border-bottom: 1px solid;
+
+            &-title{
+                height: 100%;
+            }
+
+            &-category {
+                display: inline-flex;
+                height: 3rem;
+                margin-right: 0.2em;
+                width: 3rem;
+
+                &-link{
+                    text-indent: 100%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+            }
+
         }
-        &--body{
+
+        &--body {
             padding: 1.2rem;
             flex-basis: 15em;
         }
+
     }
 
 }

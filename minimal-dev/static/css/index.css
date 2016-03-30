@@ -15,7 +15,20 @@
     margin-top: 3rem;
     width: 30rem; }
     .home_content-article--header {
-      height: 2em; }
+      display: flex;
+      height: 4rem;
+      border-bottom: 1px solid; }
+      .home_content-article--header-title {
+        height: 100%; }
+      .home_content-article--header-category {
+        display: inline-flex;
+        height: 3rem;
+        margin-right: 0.2em;
+        width: 3rem; }
+        .home_content-article--header-category-link {
+          text-indent: 100%;
+          white-space: nowrap;
+          overflow: hidden; }
     .home_content-article--body {
       padding: 1.2rem;
       flex-basis: 15em; }
