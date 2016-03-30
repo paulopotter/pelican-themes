@@ -1,30 +1,21 @@
-#conteudo_home {
+.home_content {
   display: flex;
   flex-flow: wrap;
   height: 100%;
   justify-content: space-around;
   margin: 0 auto;
   width: 70rem; }
-
-.article {
-  align-items: stretch;
-  border: 1px dashed black;
-  display: flex;
-  flex-direction: column;
-  height: 20rem;
-  justify-content: space-between;
-  margin-top: 3rem;
-  width: 30rem; }
-
-.article_header {
-  height: 2em; }
-
-.article_body {
-  padding: 1.2rem;
-  flex-basis: 15em; }
-
-.article_footer {
-  background: #144355;
-  padding: 0.5em; }
-  .article_footer a:hover {
-    color: #b5deee; }
+  .home_content-article {
+    align-items: stretch;
+    border: 1px dashed black;
+    display: flex;
+    flex-direction: column;
+    height: 20rem;
+    justify-content: space-between;
+    margin-top: 3rem;
+    width: 30rem; }
+    .home_content-article--header {
+      height: 2em; }
+    .home_content-article--body {
+      padding: 1.2rem;
+      flex-basis: 15em; }

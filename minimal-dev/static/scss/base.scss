@@ -42,17 +42,19 @@ a {
       color: $third_color;
     }
   }
-}
 
-.menu_site {
-  a {
-    color: $secundary-color;
-    &:hover {
-      color: $third_color;
+  &-menu {
+    a {
+      color: $secundary-color;
+      &:hover {
+        color: $third_color;
+      }
     }
   }
 }
-.social {
+
+
+.header_site-social {
   clear: both;
 
   li {
@@ -69,7 +71,7 @@ a {
     margin: auto 10px;
     width: 3em;
 
-    &.sc {
+    &.social {
       &-GITHUB {
         background-image: url($svg + 'github.svg');
       }
@@ -81,11 +83,16 @@ a {
       }
     }
   }
+
+  &--item-text {
+    display: none;
+  }
 }
 
+
 /*** Conteudo ***/
-.wrapper {
-  #content {
+.wrapper_site {
+  &-content {
     margin-left:auto;
     margin-right:auto;
     height:100%;

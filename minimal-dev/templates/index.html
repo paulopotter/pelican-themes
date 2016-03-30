@@ -1,31 +1,31 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <section id="conteudo_home">
+    <section class="home_content">
       {% for article in articles_page.object_list %}
-      <article class='article'>
-        <div class="article_header">
-          <h2 class='article_title'>
-            <a href="{{ SITEURL }}/{{ article.url }}#{{ article.slug }}">{{ article.title }}</a>
-          </h2>
-        </div>
+        <article class='home_content-article'>
+          <header class="home_content-article--header">
 
-        <div class='article_body'>
-          {% if summarise or article.metadata['summary'] or article.metadata['summarize'] %}
-            {{ article.summary }}
-              <a class="btn" href="{{ SITEURL }}/{{ article.url }}#{{ article.slug }}">Continue lendo...</a>
-          {% else %}
-            {{ article.content }}
-          {% endif %}
-        </div>
+            <p class="home_content-article--category">
+              <a href="{{ SITEURL }}/{{ article.category.url }}" class='home_content-article--category-link {{article.category|lower}}'>{{ article.category }}</a>
+            </p>
 
+            <h2 class='home_content-article--title'>
+              <a href="{{ SITEURL }}/{{ article.url }}#{{ article.slug }}" class='home_article-title-link article_link'>{{ article.title }}</a>
+            </h2>
+          </header>
 
-        <div class="article_footer">
-          <p class="category_home">
-            <a href="{{ SITEURL }}/{{ article.category.url }}">{{ article.category }}</a>
-          </p>
-        </div>
-      </article>
+          <div class='home_content-article--body'>
+            {% if summarise or article.metadata['summary'] or article.metadata['summarize'] %}
+              {{ article.summary }}
+                <a class="home_content-article--link_more" href="{{ SITEURL }}/{{ article.url }}#{{ article.slug }}">Continue lendo...</a>
+            {% else %}
+              {{ article.content }}
+            {% endif %}
+
+          </div>
+
+        </article>
       {% endfor %}
 
     </section>

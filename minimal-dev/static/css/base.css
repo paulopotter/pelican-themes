@@ -28,18 +28,17 @@ a {
     color: #144355; }
     .header_site a:hover {
       color: #b5deee; }
+  .header_site-menu a {
+    color: #144355; }
+    .header_site-menu a:hover {
+      color: #b5deee; }
 
-.menu_site a {
-  color: #144355; }
-  .menu_site a:hover {
-    color: #b5deee; }
-
-.social {
+.header_site-social {
   clear: both; }
-  .social li {
+  .header_site-social li {
     display: inline;
     float: left; }
-  .social a {
+  .header_site-social a {
     background-position: top left;
     background-size: 100%;
     clear: both;
@@ -48,15 +47,17 @@ a {
     height: 3em;
     margin: auto 10px;
     width: 3em; }
-    .social a.sc-GITHUB {
+    .header_site-social a.social-GITHUB {
       background-image: url("../svg/github.svg"); }
-    .social a.sc-LinkedIn {
+    .header_site-social a.social-LinkedIn {
       background-image: url("../svg/linkedin.svg"); }
-    .social a.sc-Twitter {
+    .header_site-social a.social-Twitter {
       background-image: url("../svg/twitter.svg"); }
+  .header_site-social--item-text {
+    display: none; }
 
 /*** Conteudo ***/
-.wrapper #content {
+.wrapper_site-content {
   margin-left: auto;
   margin-right: auto;
   height: 100%;

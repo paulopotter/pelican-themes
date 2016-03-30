@@ -1,36 +1,30 @@
 @import '_colors';
 
-#conteudo_home{
+.home_content{
     display: flex;
     flex-flow: wrap;
     height: 100%;
     justify-content: space-around;
     margin: 0 auto;
     width: 70rem;
-}
-.article {
-    align-items: stretch;
-    border: 1px dashed black;
-    display: flex;
-    flex-direction: column;
-    height: 20rem;
-    justify-content: space-between;
-    margin-top: 3rem;
-    width: 30rem;
-}
-.article_header {
-    height: 2em;
-}
-.article_body{
-    padding: 1.2rem;
-    flex-basis: 15em;
-}
+    
+    &-article {
+        align-items: stretch;
+        border: 1px dashed black;
+        display: flex;
+        flex-direction: column;
+        height: 20rem;
+        justify-content: space-between;
+        margin-top: 3rem;
+        width: 30rem;
 
-.article_footer{
-    background: $secundary-color;
-    padding: 0.5em;
-
-    a:hover{
-        color: $third-color;
+        &--header {
+            height: 2em;
+        }
+        &--body{
+            padding: 1.2rem;
+            flex-basis: 15em;
+        }
     }
+
 }

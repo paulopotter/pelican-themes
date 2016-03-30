@@ -12,35 +12,54 @@
     <meta name="robots" content="">
   {% endblock %}
 
-  {% block js %}
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-    <script type="text/javascript" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/float-footer.js"></script>
+  {% block js_top %}
   {% endblock %}
 </head>
 <body>
   <header class='header_site'>
-    <h1><a href="{{ SITEURL }}">{{ SITENAME }}</a></h1>
+    <h1>
+      {% block header_site %}
+        <a href="{{ SITEURL }}">{{ SITENAME }}</a>
+      {% endblock header_site %}
+    </h1>
 
-    <nav class="menu_site">
-      <ul class="list">
+    <nav class="header_site-menu">
+      <ul class="header_site-menu--list">
           {% for page in pages|sort(attribute='title') %}
-            <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
+            <li>
+              <a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a>
+            </li>
           {% endfor %}
         </ul>
-
     </nav>
-    <ul class="social">
+
+    <ul class="header_site-social">
       {% for name, link in SOCIAL %}
-        <li><a class="sc-{{ name }}" href="{{ link }}" target="_blank"><i class="fa fa-{{ name }}"></i></a></li>
+        <li>
+          <a class="header_site-social--item-link social-{{ name }}" href="{{ link }}" target="_blank">
+            <i class="header_site-social--item-text">{{ name }}</i>
+          </a>
+        </li>
       {% endfor %}
     </ul>
   </header>
-<div class="wrapper">
-  <div id="content">
-    {% block content %}{% endblock %}
+
+<div class="wrapper_site">
+  <div class="wrapper_site-content">
+    {% block content %}
+    {% endblock content %}
   </div>
-  <div class='footer-float'> {{ SITENAME }}</div>
+
+  <div class='footer-float'>
+      {% block footer_float %}
+      {% endblock footer_float%}
+  </div>
 </div>
 
 </body>
+
+{% block js_bottom %}
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script type="text/javascript" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/float-footer.js"></script>
+{% endblock %}
 </html>
