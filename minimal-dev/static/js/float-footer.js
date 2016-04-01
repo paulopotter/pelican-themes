@@ -1,5 +1,5 @@
 function UpdateTableHeaders() {
-   $(".wrapper").each(function() {
+   $(".wrapper_site").each(function() {
 
        var el             = $(this),
            offset         = el.offset(),

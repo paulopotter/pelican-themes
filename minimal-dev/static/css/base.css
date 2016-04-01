@@ -7,7 +7,9 @@
   list-style: none; }
 
 html, body {
-  font-size: 16px; }
+  font-size: 16px;
+  margin: 0;
+  padding: 0; }
 
 a {
   color: #56b3d7; }
@@ -57,12 +59,16 @@ a {
     display: none; }
 
 /*** Conteudo ***/
-.wrapper_site-content {
-  margin-left: auto;
-  margin-right: auto;
-  height: 100%;
-  width: 80%;
-  margin-bottom: 3rem; }
+.wrapper_site {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  text-align: center; }
+  .wrapper_site-content {
+    position: relative;
+    display: flex;
+    margin: 0 auto 3em;
+    height: 100%; }
 
 /* Footer floating for POST */
 .footer-float {
