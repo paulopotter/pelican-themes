@@ -61,14 +61,15 @@ a {
 /*** Conteudo ***/
 .wrapper_site {
   overflow: hidden;
-  width: 100%;
   position: relative;
-  text-align: center; }
+  text-align: center;
+  width: 100%; }
   .wrapper_site-content {
-    position: relative;
     display: flex;
+    height: 100%;
     margin: 0 auto 3em;
-    height: 100%; }
+    position: relative;
+    text-align: left; }
 
 /* Footer floating for POST */
 .footer_float {
