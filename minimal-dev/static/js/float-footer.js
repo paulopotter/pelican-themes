@@ -4,7 +4,7 @@ function UpdateTableHeaders() {
        var el             = $(this),
            offset         = el.offset(),
            scrollTop      = $(window).scrollTop(),
-           floatingHeader = $(".footer-float", this)
+           floatingHeader = $(".footer_float", this)
        
        if ((scrollTop > offset.top) && (scrollTop < offset.top + el.height())) {
            floatingHeader.addClass('show');

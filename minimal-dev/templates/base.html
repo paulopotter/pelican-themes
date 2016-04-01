@@ -50,9 +50,23 @@
     {% endblock content %}
   </div>
 
-  <div class='footer-float'>
+  <div class='footer_float'>
       {% block footer_float %}
-      {{ SITENAME }}
+        <p class="footer_float-social">
+          {% block footer_float_social %}
+          {% endblock footer_float_social%}
+        </p>
+        
+        <p class="footer_float-title">
+          {% block footer_float_title %}
+              {{ SITENAME }}
+          {% endblock footer_float_title%}
+        </p>
+
+        <p class="footer_float-menu">
+          {% block footer_float_menu %}
+          {% endblock footer_float_menu%}
+        </p>
       {% endblock footer_float%}
   </div>
 </div>

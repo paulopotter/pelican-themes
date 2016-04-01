@@ -41,7 +41,7 @@ a {
     color: $secundary-color;
 
     &:hover {
-      color: $third_color;
+      color: $third-color;
     }
   }
 
@@ -49,7 +49,7 @@ a {
     a {
       color: $secundary-color;
       &:hover {
-        color: $third_color;
+        color: $third-color;
       }
     }
   }
@@ -108,8 +108,8 @@ a {
 }
 
 /* Footer floating for POST */
-.footer-float {
-  background-color: #f1e2d3;
+.footer_float {
+  background-color: $third-color;
   bottom: 0;
   display: block;
   height: 0;
