@@ -1,4 +1,4 @@
-@import '_colors';
+@import '_constant';
 
 .home_content {
     display: flex;
@@ -36,13 +36,15 @@
 
             &-category {
                 display: inline-flex;
-                height: 99%;
+                height: 100%;
                 margin-right: 0.2em;
 
                 &-link{
                     background-position: center;
                     background-repeat: no-repeat;
-                    background-size: 100%;
+                    background-size: contain;
+                    max-height: 4em;
+                    max-width: 4em;
                     overflow: hidden;
                     text-indent: 100%;
                     white-space: nowrap;
@@ -55,6 +57,10 @@
             padding: 1.2rem;
             flex-basis: 15em;
             background-color: #fefefe;
+
+            &::first-letter{
+                font-size: 2em;
+            }
         }
 
     }
