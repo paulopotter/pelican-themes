@@ -1,4 +1,5 @@
 /* Colors */
+/* */
 .home_content {
   display: flex;
   flex-flow: wrap;
@@ -9,19 +10,18 @@
   .home_content-article {
     align-items: stretch;
     border-radius: 0.3em;
-    box-shadow: 0em 0em 0.6em -0.2em #56b3d7;
+    box-shadow: 0em 0em 0.6em -0.2em #144355;
     display: flex;
     flex-direction: column;
     height: 20rem;
     justify-content: space-between;
     margin-top: 3rem;
     width: 30rem; }
-    .home_content-article:hover {
-      box-shadow: 0em 0em 0.6em -0.2em #144355; }
     .home_content-article--header {
       display: flex;
       height: 4rem;
-      padding: 0.2em 0.2em 0.7em; }
+      padding: 0.2em 0.2em 0.7em;
+      background-color: #b5deee; }
       .home_content-article--header-title {
         align-items: center;
         display: flex;
@@ -34,6 +34,7 @@
           background-position: center;
           background-repeat: no-repeat;
           background-size: contain;
+          margin-bottom: 0.2em;
           max-height: 4em;
           max-width: 4em;
           overflow: hidden;
