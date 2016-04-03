@@ -4,5 +4,20 @@
 
 .logo-javascript{
     background-image: url($svg + 'javascript.svg');
-    background-repeat: no-repeat;
+}
+
+.logo-css3{
+    background-image: url($svg + 'css3.svg');
+}
+
+.logo-html5{
+    background-image: url($svg + 'html5.svg');
+}
+
+.logo-jasmine{
+    background-image: url($svg + 'jasmine.svg');
+}
+
+.logo-python{
+    background-image: url($svg + 'python.svg');
 }

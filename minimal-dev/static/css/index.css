@@ -26,9 +26,12 @@
         margin-right: 0.2em;
         width: 3rem; }
         .home_content-article--header-category-link {
+          background-position: 0 0;
+          background-repeat: no-repeat;
+          background-size: 100%;
+          overflow: hidden;
           text-indent: 100%;
-          white-space: nowrap;
-          overflow: hidden; }
+          white-space: nowrap; }
     .home_content-article--body {
       padding: 1.2rem;
       flex-basis: 15em; }
