@@ -17,16 +17,18 @@
     .home_content-article--header {
       display: flex;
       height: 4rem;
-      border-bottom: 1px solid; }
+      border-bottom: 1px solid;
+      padding: 0.2em 0.2em 0.7em; }
       .home_content-article--header-title {
+        align-items: center;
+        display: flex;
         height: 100%; }
       .home_content-article--header-category {
         display: inline-flex;
-        height: 3rem;
-        margin-right: 0.2em;
-        width: 3rem; }
+        height: 99%;
+        margin-right: 0.2em; }
         .home_content-article--header-category-link {
-          background-position: 0 0;
+          background-position: center;
           background-repeat: no-repeat;
           background-size: 100%;
           overflow: hidden;
