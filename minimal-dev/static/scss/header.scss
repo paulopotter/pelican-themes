@@ -1,0 +1,65 @@
+@import '_constant';
+
+.header_site {
+  align-items:center;
+  background-color: $primary-color;
+  display:flex;
+  height: 25vh;
+  justify-content:center;
+  text-align: center;
+  width: 100%;
+
+  a {
+    color: $secundary-color;
+
+    &:hover {
+      color: $third-color;
+    }
+  }
+
+  &-menu {
+    a {
+      color: $secundary-color;
+      &:hover {
+        color: $third-color;
+      }
+    }
+  }
+
+  &-social {
+    clear: both;
+
+    &--item {
+      display: inline;
+      float: left;
+
+      &-link {
+        background-position: top left;
+        background-size: 100%;
+        clear: both;
+        display: block;
+        float: left;
+        height: 3em;
+        margin: auto 10px;
+        width: 3em;
+      }
+
+      &-text {
+        display: none;
+      }
+    }
+  }
+
+}
+
+.social {
+  &-GITHUB {
+    background-image: url($svg + 'github.svg');
+  }
+  &-LinkedIn {
+    background-image: url($svg + 'linkedin.svg');
+  }
+  &-Twitter {
+    background-image: url($svg + 'twitter.svg');
+  }
+}

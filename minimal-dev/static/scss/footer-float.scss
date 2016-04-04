@@ -1,0 +1,16 @@
+@import '_constant';
+
+.footer_float {
+  background-color: $third-color;
+  bottom: 0;
+  display: block;
+  height: 0;
+  position: fixed;
+  transition: height 1s ease-out;
+  width: 100%;
+  z-index: 1;
+}
+.show {
+  height:2em;
+  transition: height .5s ease-in;
+}
