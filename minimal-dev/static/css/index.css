@@ -41,8 +41,13 @@
           text-indent: 100%;
           white-space: nowrap; }
     .home_content-article--body {
-      padding: 1.2rem;
+      background-color: #fefefe;
       flex-basis: 15em;
-      background-color: #fefefe; }
+      height: 14rem;
+      padding: 1.2rem; }
       .home_content-article--body::first-letter {
         font-size: 2em; }
+    .home_content-article--footer {
+      height: 2rem;
+      padding: 0.5em 1em 0.5em 0;
+      text-align: right; }

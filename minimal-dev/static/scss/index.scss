@@ -53,13 +53,20 @@
         }
 
         &--body {
-            padding: 1.2rem;
-            flex-basis: 15em;
             background-color: $light-color;
+            flex-basis: 15em;
+            height: 14rem;
+            padding: 1.2rem;
 
             &::first-letter{
                 font-size: 2em;
             }
+        }
+
+        &--footer {
+            height: 2rem;
+            padding: 0.5em 1em 0.5em 0;
+            text-align: right;
         }
 
     }
