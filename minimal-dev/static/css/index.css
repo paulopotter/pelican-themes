@@ -20,8 +20,7 @@
     .home_content-article--header {
       display: flex;
       height: 4rem;
-      padding: 0.2em 0.2em 0.7em;
-      background-color: #b5deee; }
+      padding: 0.2em 0.2em 0.7em; }
       .home_content-article--header-title {
         align-items: center;
         display: flex;
@@ -41,13 +40,14 @@
           text-indent: 100%;
           white-space: nowrap; }
     .home_content-article--body {
-      background-color: #fefefe;
+      background-color: #d5ecf5;
       flex-basis: 15em;
       height: 14rem;
       padding: 1.2rem; }
       .home_content-article--body::first-letter {
         font-size: 2em; }
     .home_content-article--footer {
+      background-color: #d5ecf5;
       height: 2rem;
       padding: 0.5em 1em 0.5em 0;
       text-align: right; }

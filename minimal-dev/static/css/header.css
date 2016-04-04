@@ -2,34 +2,34 @@
 /* */
 .header_site {
   align-items: center;
-  background-color: #56b3d7;
+  background-color: #b5deee;
   display: flex;
-  height: 25vh;
+  height: 10rem;
   justify-content: center;
   text-align: center;
   width: 100%; }
-  .header_site a {
-    color: #144355; }
-    .header_site a:hover {
-      color: #b5deee; }
   .header_site-menu a {
     color: #144355; }
     .header_site-menu a:hover {
       color: #b5deee; }
   .header_site-social {
-    clear: both; }
+    display: flex;
+    position: relative;
+    top: -2em; }
     .header_site-social--item {
-      display: inline;
-      float: left; }
+      display: flex; }
       .header_site-social--item-link {
-        background-position: top left;
-        background-size: 100%;
+        background-position: 0 0;
+        background-size: contain;
+        background-repeat: no-repeat;
         clear: both;
         display: block;
-        float: left;
-        height: 3em;
+        height: 2em;
         margin: auto 10px;
-        width: 3em; }
+        width: 2em;
+        color: #144355; }
+        .header_site-social--item-link:hover {
+          color: #b5deee; }
       .header_site-social--item-text {
         display: none; }
 

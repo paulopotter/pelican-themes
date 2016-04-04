@@ -17,9 +17,9 @@
 </head>
 <body>
   <header class='header_site'>
-    <h1>
+    <h1 class="header_site--title">
       {% block header_site %}
-        <a href="{{ SITEURL }}">{{ SITENAME }}</a>
+        <a href="{{ SITEURL }}" class="header_site--title-link">{{ SITENAME }}</a>
       {% endblock header_site %}
     </h1>
 

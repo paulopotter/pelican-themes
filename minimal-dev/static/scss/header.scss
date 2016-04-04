@@ -2,20 +2,12 @@
 
 .header_site {
   align-items:center;
-  background-color: $primary-color;
+  background-color: $third-color;
   display:flex;
-  height: 25vh;
+  height: 10rem;
   justify-content:center;
   text-align: center;
   width: 100%;
-
-  a {
-    color: $secundary-color;
-
-    &:hover {
-      color: $third-color;
-    }
-  }
 
   &-menu {
     a {
@@ -27,21 +19,28 @@
   }
 
   &-social {
-    clear: both;
+    display: flex;
+    position: relative;
+    top: -2em;
 
     &--item {
-      display: inline;
-      float: left;
+      display: flex;
 
       &-link {
-        background-position: top left;
-        background-size: 100%;
+        background-position: 0 0;
+        background-size: contain;
+        background-repeat: no-repeat;
         clear: both;
         display: block;
-        float: left;
-        height: 3em;
+        height: 2em;
         margin: auto 10px;
-        width: 3em;
+        width: 2em;
+
+        color: $secundary-color;
+
+        &:hover {
+            color: $third-color;
+        }
       }
 
       &-text {
