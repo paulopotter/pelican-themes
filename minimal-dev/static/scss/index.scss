@@ -52,7 +52,7 @@
         }
 
         &--body {
-            background-color: $light-color;
+            border-top: 1px dotted $light-color;
             flex-basis: 15em;
             height: 14rem;
             padding: 1.2rem;
