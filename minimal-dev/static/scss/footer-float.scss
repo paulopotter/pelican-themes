@@ -1,16 +1,53 @@
 @import '_constant';
 
+
 .footer_float {
   background-color: $third-color;
   bottom: 0;
-  display: block;
+  display: flex;
+  font-size: 2em;
+  font-weight: bold;
   height: 0;
   position: fixed;
   transition: height 1s ease-out;
   width: 100%;
   z-index: 1;
+
+  &-social {
+      display: flex;
+
+      &--item {
+        display: flex;
+
+        &-link {
+          background-position: 0 0;
+          background-size: contain;
+          background-repeat: no-repeat;
+          clear: both;
+          display: block;
+          height: 2em;
+          margin: auto 10px;
+          width: 2em;
+
+          color: $secundary-color;
+
+          &:hover {
+              color: $third-color;
+          }
+        }
+
+        &-text {
+          display: none;
+        }
+      }
+    }
+
+  &-title {
+    flex-grow:1;
+  }
 }
+
 .show {
-  height:2em;
+  height: 4rem;
   transition: height .5s ease-in;
 }

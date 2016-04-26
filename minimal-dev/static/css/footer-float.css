@@ -3,13 +3,35 @@
 .footer_float {
   background-color: #b5deee;
   bottom: 0;
-  display: block;
+  display: flex;
+  font-size: 2em;
+  font-weight: bold;
   height: 0;
   position: fixed;
   transition: height 1s ease-out;
   width: 100%;
   z-index: 1; }
+  .footer_float-social {
+    display: flex; }
+    .footer_float-social--item {
+      display: flex; }
+      .footer_float-social--item-link {
+        background-position: 0 0;
+        background-size: contain;
+        background-repeat: no-repeat;
+        clear: both;
+        display: block;
+        height: 2em;
+        margin: auto 10px;
+        width: 2em;
+        color: #144355; }
+        .footer_float-social--item-link:hover {
+          color: #b5deee; }
+      .footer_float-social--item-text {
+        display: none; }
+  .footer_float-title {
+    flex-grow: 1; }
 
 .show {
-  height: 2em;
+  height: 4rem;
   transition: height .5s ease-in; }

@@ -16,7 +16,7 @@
   {% endblock %}
 </head>
 <body>
-  <header class='header_site'>
+  <header class='header_site' id="start-page">
     <h1 class="header_site--title">
       {% block header_site %}
         <a href="{{ SITEURL }}" class="header_site--title-link">{{ SITENAME }}</a>
@@ -45,29 +45,38 @@
   </header>
 
 <div class="wrapper_site">
-  <div class="wrapper_site-content">
+  <div class="wrapper_site-content" id="start-site">
     {% block content %}
     {% endblock content %}
   </div>
 
   <div class='footer_float'>
       {% block footer_float %}
-        <p class="footer_float-social">
+        <ul class="footer_float-social">
           {% block footer_float_social %}
-          {% endblock footer_float_social%}
-        </p>
+              {% for name, link in SOCIAL %}
+                <li class="footer_float-social--item">
+                  <a class="footer_float-social--item-link social-{{ name }}" href="{{ link }}" target="_blank">
+                    <i class="footer_float-social--item-text">{{ name }}</i>
+                  </a>
+                </li>
+              {% endfor %}
+          {% endblock footer_float_social %}
+        </ul>
         
         <p class="footer_float-title">
           {% block footer_float_title %}
-              {{ SITENAME }}
-          {% endblock footer_float_title%}
+            <a href="#start-site">
+                  {{ SITENAME }}
+            </a>
+          {% endblock footer_float_title %}
         </p>
 
         <p class="footer_float-menu">
           {% block footer_float_menu %}
-          {% endblock footer_float_menu%}
+          {% endblock footer_float_menu %}
         </p>
-      {% endblock footer_float%}
+      {% endblock footer_float %}
   </div>
 </div>
 
