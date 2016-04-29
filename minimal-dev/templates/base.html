@@ -17,35 +17,37 @@
 </head>
 <body>
   <header class='header_site' id="start-page">
-    <h1 class="header_site--title">
-      {% block header_site %}
-        <a href="{{ SITEURL }}" class="header_site--title-link">{{ SITENAME }}</a>
-      {% endblock header_site %}
-    </h1>
+    <div class="column_wrapper">
+      <h1 class="header_site--title">
+        {% block header_site %}
+          <a href="{{ SITEURL }}" class="header_site--title-link">{{ SITENAME }}</a>
+        {% endblock header_site %}
+      </h1>
 
-    <nav class="header_site-menu">
-      <ul class="header_site-menu--list">
-          {% for page in pages|sort(attribute='title') %}
-            <li>
-              <a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a>
-            </li>
-          {% endfor %}
-        </ul>
-    </nav>
+      <nav class="header_site-menu">
+        <ul class="header_site-menu--list">
+            {% for page in pages|sort(attribute='title') %}
+              <li>
+                <a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a>
+              </li>
+            {% endfor %}
+          </ul>
+      </nav>
 
-    <ul class="header_site-social">
-      {% for name, link in SOCIAL %}
-        <li class="header_site-social--item">
-          <a class="header_site-social--item-link social-{{ name }}" href="{{ link }}" target="_blank">
-            <i class="header_site-social--item-text">{{ name }}</i>
-          </a>
-        </li>
-      {% endfor %}
-    </ul>
+      <ul class="header_site-social">
+        {% for name, link in SOCIAL %}
+          <li class="header_site-social--item">
+            <a class="header_site-social--item-link logo-{{ name }}" href="{{ link }}" target="_blank">
+              <i class="header_site-social--item-text">{{ name }}</i>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
   </header>
-
+{# 
 <div class="wrapper_site">
-  <div class="wrapper_site-content" id="start-site">
+  <div class="wrapper_site-content column_wrapper" id="start-site">
     {% block content %}
     {% endblock content %}
   </div>
@@ -78,7 +80,7 @@
         </p>
       {% endblock footer_float %}
   </div>
-</div>
+</div> #}
 
 </body>
 

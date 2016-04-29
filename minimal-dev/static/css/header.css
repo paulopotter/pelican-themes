@@ -2,22 +2,25 @@
 /* */
 .header_site {
   align-items: center;
-  background-color: #b5deee;
+  background-color: #d5ecf5;
   display: flex;
   height: 10rem;
   justify-content: center;
   text-align: center;
   width: 100%; }
-  .header_site-menu a {
-    color: #144355; }
-    .header_site-menu a:hover {
-      color: #b5deee; }
+  .header_site--title {
+    padding: 1rem 0.5rem 0.5rem; }
+    .header_site--title-link {
+      font-size: 1.5em; }
   .header_site-social {
     display: flex;
-    position: relative;
-    top: -2em; }
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: -0.6rem; }
     .header_site-social--item {
-      display: flex; }
+      display: flex;
+      margin-bottom: .5rem; }
       .header_site-social--item-link {
         background-position: 0 0;
         background-size: contain;
@@ -27,17 +30,8 @@
         height: 2em;
         margin: auto 10px;
         width: 2em;
-        color: #144355; }
+        color: #56b3d7; }
         .header_site-social--item-link:hover {
           color: #b5deee; }
       .header_site-social--item-text {
         display: none; }
-
-.social-GITHUB {
-  background-image: url("../svg/github.svg"); }
-
-.social-LinkedIn {
-  background-image: url("../svg/linkedin.svg"); }
-
-.social-Twitter {
-  background-image: url("../svg/twitter.svg"); }
