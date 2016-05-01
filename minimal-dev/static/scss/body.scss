@@ -1,16 +1,16 @@
 @import '_constant';
 
-// .wrapper_site {
-//   overflow: hidden;
-//   position: relative;
-//   text-align: center;
-//   width: 100%;
+.wrapper_site {
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
 
-//   &-content {
-//     display: flex;
-//     height:100%;
-//     margin:0 auto 8rem;
-//     position: relative;
-//     text-align: left;
-//   }
-// }
+  &--content {
+    display: flex;
+    height:100%;
+    margin:0 auto 8rem;
+    position: relative;
+    text-align: left;
+  }
+}
