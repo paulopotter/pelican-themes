@@ -10,7 +10,7 @@
   text-align: center;
   width: 100%;
   min-width: 600px; }
-  .header_site--wrapper {
+  .header_site--wrapper, .header_site--menu {
     display: flex; }
   .header_site--title {
     padding: 0rem 0.5rem 0.5rem;

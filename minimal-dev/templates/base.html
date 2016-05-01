@@ -18,7 +18,7 @@
 <body>
   <header class='header_site' id="start-page">
     <div class="column_wrapper header_site--wrapper">
-      <span class="menu-anchor">Menu</span>
+      <p class="header_site--menu"><span class="menu-anchor">Menu</span></p>
       <h1 class="header_site--title">
         {% block header_site %}
           <a href="{{ SITEURL }}" class="header_site--title-link">{{ SITENAME }}</a>
@@ -48,7 +48,7 @@
       </ul>
   </menu>
 
-{# 
+
 <div class="wrapper_site">
   <div class="wrapper_site-content column_wrapper" id="start-site">
     {% block content %}
@@ -56,20 +56,13 @@
   </div>
 
   <div class='footer_float'>
+    <div class="column_wrapper footer_float--wrapper">
       {% block footer_float %}
-        <ul class="footer_float-social">
-          {% block footer_float_social %}
-              {% for name, link in SOCIAL %}
-                <li class="footer_float-social--item">
-                  <a class="footer_float-social--item-link social-{{ name }}" href="{{ link }}" target="_blank">
-                    <i class="footer_float-social--item-text">{{ name }}</i>
-                  </a>
-                </li>
-              {% endfor %}
-          {% endblock footer_float_social %}
-        </ul>
-        
-        <p class="footer_float-title">
+        <p class="footer_float--menu">
+          <span class="menu-anchor">Menu</span>
+        </p>
+
+        <p class="footer_float--title">
           {% block footer_float_title %}
             <a href="#start-site">
                   {{ SITENAME }}
@@ -77,13 +70,22 @@
           {% endblock footer_float_title %}
         </p>
 
-        <p class="footer_float-menu">
-          {% block footer_float_menu %}
-          {% endblock footer_float_menu %}
-        </p>
+        <ul class="footer_float--social">
+          {% block footer_float_social %}
+              {% for name, link in SOCIAL %}
+                <li class="footer_float--social-item">
+                  <a class="footer_float--social-item-link logo-{{ name }}" href="{{ link }}" target="_blank">
+                    <i class="footer_float--social-item-text">{{ name }}</i>
+                  </a>
+                </li>
+              {% endfor %}
+          {% endblock footer_float_social %}
+        </ul>
+
       {% endblock footer_float %}
+    </div>
   </div>
-</div> #}
+</div>
 
 </body>
 

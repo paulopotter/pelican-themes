@@ -13,23 +13,27 @@
   width: 100%;
   z-index: 1;
 
-  &-social {
-      display: flex;
+  &--wrapper{
+    display: flex;
+  }
 
-      &--item {
+  &--social {
+      display: flex;
+      align-self: middle;
+
+      &-item {
         display: flex;
 
         &-link {
           background-position: 0 0;
-          background-size: contain;
           background-repeat: no-repeat;
+          background-size: contain;
           clear: both;
-          display: block;
-          height: 2em;
-          margin: auto 10px;
-          width: 2em;
-
           color: $secundary-color;
+          display: block;
+          height: 2rem;
+          margin: auto 10px;
+          width: 2rem;
 
           &:hover {
               color: $third-color;
@@ -42,8 +46,17 @@
       }
     }
 
-  &-title {
-    flex-grow:1;
+  &--title {
+    align-self: center;
+    flex-grow:2;
+    overflow: hidden;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  &--menu {
+    align-self: center;
   }
 }
 

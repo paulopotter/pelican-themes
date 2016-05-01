@@ -26,10 +26,12 @@ $menu_size: 220px;
     cursor: pointer;
     display: flex;
     min-height: 25px;
+    max-height: 25px;
     overflow: hidden;
     text-indent: -9999px;
     vertical-align: middle;
     min-width: 25px;
+    max-width: 25px;
     align-self: center;
 
     .menu-active & {
