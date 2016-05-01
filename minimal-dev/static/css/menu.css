@@ -31,7 +31,7 @@
     background: url("../svg/x.svg") no-repeat center; }
 
 .menu-active {
-  overflow-x: hidden; }
+  overflow: hidden; }
   .menu-active .site_menu {
     -webkit-transform: translateX(0);
     -moz-transform: translateX(0);

@@ -39,7 +39,8 @@ $menu_size: 220px;
 
 
 .menu-active { // show layer
-    overflow-x: hidden;
+    overflow: hidden;
+
     .site_menu {
         -webkit-transform: translateX(0);
         -moz-transform: translateX(0);
