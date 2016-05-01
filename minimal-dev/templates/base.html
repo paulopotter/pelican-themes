@@ -54,36 +54,36 @@
     {% block content %}
     {% endblock content %}
   </div>
+</div>
 
-  <div class='footer_float'>
-    <div class="column_wrapper footer_float--wrapper">
-      {% block footer_float %}
-        <p class="footer_float--menu">
-          <span class="menu-anchor">Menu</span>
-        </p>
+<div class='footer_float'>
+  <div class="column_wrapper footer_float--wrapper">
+    {% block footer_float %}
+      <p class="footer_float--menu">
+        <span class="menu-anchor">Menu</span>
+      </p>
 
-        <p class="footer_float--title">
-          {% block footer_float_title %}
-            <a href="#start-site">
-                  {{ SITENAME }}
-            </a>
-          {% endblock footer_float_title %}
-        </p>
+      <p class="footer_float--title">
+        {% block footer_float_title %}
+          <a href="#start-site">
+                {{ SITENAME }}
+          </a>
+        {% endblock footer_float_title %}
+      </p>
 
-        <ul class="footer_float--social">
-          {% block footer_float_social %}
-              {% for name, link in SOCIAL %}
-                <li class="footer_float--social-item">
-                  <a class="footer_float--social-item-link logo-{{ name }}" href="{{ link }}" target="_blank">
-                    <i class="footer_float--social-item-text">{{ name }}</i>
-                  </a>
-                </li>
-              {% endfor %}
-          {% endblock footer_float_social %}
-        </ul>
+      <ul class="footer_float--social">
+        {% block footer_float_social %}
+            {% for name, link in SOCIAL %}
+              <li class="footer_float--social-item">
+                <a class="footer_float--social-item-link logo-{{ name }}" href="{{ link }}" target="_blank">
+                  <i class="footer_float--social-item-text">{{ name }}</i>
+                </a>
+              </li>
+            {% endfor %}
+        {% endblock footer_float_social %}
+      </ul>
 
-      {% endblock footer_float %}
-    </div>
+    {% endblock footer_float %}
   </div>
 </div>
 

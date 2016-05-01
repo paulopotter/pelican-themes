@@ -12,6 +12,7 @@
   transition: height 1s ease-out;
   width: 100%;
   z-index: 1;
+  overflow: hidden;
 
   &--wrapper{
     display: flex;
