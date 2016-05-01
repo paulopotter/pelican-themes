@@ -17,22 +17,13 @@
 </head>
 <body>
   <header class='header_site' id="start-page">
-    <div class="column_wrapper">
+    <div class="column_wrapper header_site--wrapper">
+      <span class="menu-anchor">Menu</span>
       <h1 class="header_site--title">
         {% block header_site %}
           <a href="{{ SITEURL }}" class="header_site--title-link">{{ SITENAME }}</a>
         {% endblock header_site %}
       </h1>
-
-      <nav class="header_site-menu">
-        <ul class="header_site-menu--list">
-            {% for page in pages|sort(attribute='title') %}
-              <li>
-                <a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a>
-              </li>
-            {% endfor %}
-          </ul>
-      </nav>
 
       <ul class="header_site-social">
         {% for name, link in SOCIAL %}
@@ -43,8 +34,20 @@
           </li>
         {% endfor %}
       </ul>
+
     </div>
   </header>
+
+  <menu class="site_menu">
+    <ul class="site_menu--list">
+        {% for page in pages|sort(attribute='title') %}
+          <li class='site_menu--list-item'>
+            <a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+  </menu>
+
 {# 
 <div class="wrapper_site">
   <div class="wrapper_site-content column_wrapper" id="start-site">
@@ -86,6 +89,7 @@
 
 {% block js_bottom %}
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <script type="text/javascript" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/menu.js"></script>
   <script type="text/javascript" src="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/js/float-footer.js"></script>
 {% endblock %}
 </html>

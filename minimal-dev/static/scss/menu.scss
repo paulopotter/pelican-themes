@@ -1,0 +1,57 @@
+@import '_constant';
+
+$menu_size: 220px;
+
+.site_menu { // layer out header
+    height: 100%;
+    left: 0;
+    padding-top: 10px;
+    position: fixed;
+    top: 0;
+    width: $menu_size;
+    z-index: 1;
+
+    -webkit-transform: translateX(-$menu_size);
+    -moz-transform: translateX(-$menu_size);
+    -ms-transform: translateX(-$menu_size);
+    transform: translateX(-$menu_size);
+    -webkit-transition: all .25s linear;
+    -moz-transition: all .25s linear;
+    -ms-transition: all .25s linear;
+    transition: all .25s linear;
+}
+
+.menu-anchor { // icon of menu
+    background: url($svg + 'menu.svg') no-repeat center;
+    cursor: pointer;
+    display: flex;
+    min-height: 25px;
+    overflow: hidden;
+    text-indent: -9999px;
+    vertical-align: middle;
+    min-width: 25px;
+    align-self: center;
+
+    .menu-active & {
+        background: url($svg + 'x.svg') no-repeat center;
+    }
+}
+
+
+.menu-active { // show layer
+    overflow-x: hidden;
+    .site_menu {
+        -webkit-transform: translateX(0);
+        -moz-transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
+    }
+    
+    header, 
+    .wrapper_site {
+        -webkit-transform: translateX($menu_size);
+        -moz-transform: translateX($menu_size);
+        -ms-transform: translateX($menu_size);
+        transform: translateX($menu_size);
+    }
+}

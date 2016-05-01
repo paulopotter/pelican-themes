@@ -1,16 +1,25 @@
 @import '_constant';
+@import '_functions';
 
 .header_site {
-  align-items:center;
-  background-color: $light-color;
-  display:flex;
-  height: 10rem;
-  justify-content:center;
-  text-align: center;
-  width: 100%;
+    align-items:center;
+    background-color: $light-color;
+    display:flex;
+    height: 10rem;
+    justify-content:center;
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    min-width: 600px;
+
+    &--wrapper{
+        display: flex;
+    }
 
     &--title {
-        padding: 1rem 0.5rem 0.5rem;
+        padding: 0rem 0.5rem 0.5rem;
+        flex-grow: 2;
+        align-self: center;
 
         &-link {
             font-size: 1.5em;
@@ -20,50 +29,39 @@
     &-social {
         display: flex;
         flex-direction: column;
-        position: absolute;
-        right: 0;
-        top: -0.6rem;
+        align-self: center;
 
         &--item {
-          display: flex;
-          margin-bottom: .5rem;
+            display: flex;
+            margin-bottom: .5rem;
 
-          &-link {
-            background-position: 0 0;
-            background-size: contain;
-            background-repeat: no-repeat;
-            clear: both;
-            display: block;
-            height: 2em;
-            margin: auto 10px;
-            width: 2em;
+            &-link {
+                background-position: 0 0;
+                background-repeat: no-repeat;
+                background-size: contain;
+                clear: both;
+                color: $secundary-color;
+                display: block;
+                height: 2em;
+                margin: auto 10px;
+                width: 2em;
 
-            color: $secundary-color;
-
-            &:hover {
-                color: $third-color;
+                &:hover {
+                    color: $third-color;
+                }
             }
-          }
 
-          &-text {
-            display: none;
-          }
+            &-text {
+                display: none;
+                margin-top: .5rem;
+                margin-left: -7rem;
+            }
+
+            @include max-large(){
+                &:hover &-text{
+                    display: block;
+                }
+            }
         }
       }
-
 }
-
-
-//   &-menu {
-//     a {
-//       color: $secundary-color;
-//       &:hover {
-//         color: $third-color;
-//       }
-//     }
-//   }
-
-  
-
-// }
-

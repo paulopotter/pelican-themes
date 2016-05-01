@@ -41,8 +41,19 @@ a {
 
   @include min-large(){
     max-width: 1200px;
-    min-width: 600px;
+    min-width: 590px;
     width: 98%;
   }
 
+}
+
+header, .wrapper_site, {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition: all .25s linear;
+    -moz-transition: all .25s linear;
+    -ms-transition: all .25s linear;
+    transition: all .25s linear;
 }
