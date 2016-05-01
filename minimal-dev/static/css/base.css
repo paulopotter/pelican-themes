@@ -45,7 +45,7 @@ a {
       min-width: 590px;
       width: 98%; } }
 
-header, .wrapper_site {
+.header_site, .wrapper_site {
   -webkit-transform: translateX(0);
   -moz-transform: translateX(0);
   -ms-transform: translateX(0);

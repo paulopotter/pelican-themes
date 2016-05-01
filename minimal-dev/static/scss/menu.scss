@@ -50,7 +50,7 @@ $menu_size: 220px;
         transform: translateX(0);
     }
     
-    header, 
+    .header_site, 
     .wrapper_site {
         -webkit-transform: translateX($menu_size);
         -moz-transform: translateX($menu_size);

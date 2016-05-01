@@ -39,7 +39,7 @@
     -moz-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0); }
-  .menu-active header,
+  .menu-active .header_site,
   .menu-active .wrapper_site {
     -webkit-transform: translateX(220px);
     -moz-transform: translateX(220px);
