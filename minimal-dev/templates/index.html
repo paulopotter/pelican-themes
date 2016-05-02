@@ -3,19 +3,20 @@
 {% block content %}
     <section class="home_content">
       {% for article in articles_page.object_list %}
+        {% if loop.index%5 != 0 %}
         <article class='home_content--article'>
-          <header class="home_content--article--header">
+          <header class="home_content--article-header">
 
-            <p class="home_content--article--header-category">
-              <a href="{{ SITEURL }}/{{ article.category.url }}" class='home_content--article--header-category-link logo-{{article.category|lower}}'>{{ article.category }}</a>
+            <p class="home_content--article-header-category">
+              <a href="{{ SITEURL }}/{{ article.category.url }}" class='home_content--article-header-category-link logo-{{article.category|lower}}'>{{ article.category }}</a>
             </p>
 
-            <h2 class='home_content--article--header-title'>
-              <a href="{{ SITEURL }}/{{ article.url }}#{{ article.slug }}" class='home_content--article--header-title-link'>{{ article.title }}</a>
+            <h2 class='home_content--article-header-title'>
+              <a href="{{ SITEURL }}/{{ article.url }}#{{ article.slug }}" class='home_content--article-header-title-link'>{{ article.title }}</a>
             </h2>
           </header>
 
-          <div class='home_content--article--body'>
+          <div class='home_content--article-body'>
             {% if summarise or article.metadata['summary'] or article.metadata['summarize'] %}
               {{ article.summary }}
             {% else %}
@@ -24,13 +25,30 @@
 
           </div>
     
-          <footer class="home_content--article--footer">
+          <footer class="home_content--article-footer">
             {% if summarise or article.metadata['summary'] or article.metadata['summarize'] %}
-                <a class="home_content--article--body-link_more" href="{{ SITEURL }}/{{ article.url }}#{{ article.slug }}">Continue lendo...</a>
+                <a class="home_content--article-body-link_more" href="{{ SITEURL }}/{{ article.url }}#{{ article.slug }}">Continue lendo...</a>
             {% endif %}
           </footer>
         </article>
+        {% else %}
+        <div class="adsense"></div>
+        {% endif %}
       {% endfor %}
-
     </section>
+{% endblock %}
+
+{% block js_bottom %}
+  {{super()}}
+
+  <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <!-- teste -->
+  <ins class="adsbygoogle"
+       style="display:block"
+       data-ad-client="ca-pub-2474646572295965"
+       data-ad-slot="8463684137"
+       data-ad-format="link"></ins>
+  <script>
+  (adsbygoogle = window.adsbygoogle || []).push({});
+  </script>
 {% endblock %}

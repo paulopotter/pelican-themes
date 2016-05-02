@@ -10,65 +10,69 @@
     
     &--article {
         align-items: stretch;
-        border-radius: 0.3em;
-        box-shadow: 0em 0em 0.6em -0.2em $secundary-color;
+        box-shadow: 0em 0em 0.6em -0.2em $dark-color;
         display: flex;
         flex-direction: column;
         height: 20rem;
         justify-content: space-between;
-        margin-top: 3rem;
+        margin-top: 5rem;
         width: 30rem;
 
 
-//         &--header {
-//             display: flex;
-//             height: 4rem;
-//             padding: 0.2em 0.2em 0.7em;
+        &-header {
+            display: flex;
+            height: 4rem;
+            padding: 0.2em 0.2em 0.7em;
 
-//             &-title{
-//                 align-items:center;
-//                 display:flex;
-//                 height: 100%;
-//             }
+            &-title{
+                align-items:center;
+                display:flex;
+                height: 100%;
+            }
 
-//             &-category {
-//                 display: inline-flex;
-//                 height: 100%;
-//                 margin-right: 0.2em;
+            &-category {
+                display: inline-flex;
+                height: 100%;
+                margin-right: 0.2em;
 
-//                 &-link{
-//                     background-position: center;
-//                     background-repeat: no-repeat;
-//                     background-size: contain;
-//                     margin-bottom: 0.2em;
-//                     max-height: 4em;
-//                     max-width: 4em;
-//                     overflow: hidden;
-//                     text-indent: 100%;
-//                     white-space: nowrap;
-//                 }
-//             }
+                &-link{
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    margin-bottom: 0.2em;
+                    max-height: 4em;
+                    max-width: 4em;
+                    overflow: hidden;
+                    text-indent: 100%;
+                    white-space: nowrap;
+                }
+            }
 
-//         }
+        }
 
-        &--body {
+        &-body {
             border-top: 1px dotted $light-color;
             flex-basis: 15em;
             height: 14rem;
             padding: 1.2rem;
+            overflow: hidden;
 
             &::first-letter{
                 font-size: 2em;
             }
         }
 
-//         &--footer {
-//             background-color: $light-color;
-//             height: 2rem;
-//             padding: 0.5em 1em 0.5em 0;
-//             text-align: right;
-//         }
+        &-footer {
+            background-color: $light-color;
+            height: 2rem;
+            padding: 0.5em 1em 0.5em 0;
+            text-align: right;
+        }
 
     }
-
+    
+    .adsense {
+        display: block;
+        width: 100%;
+    }
 }
