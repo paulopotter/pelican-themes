@@ -30,7 +30,8 @@
       .home_content--article-header-category {
         display: inline-flex;
         height: 100%;
-        margin-right: 0.2em; }
+        margin-right: 0.2em;
+        position: relative; }
         .home_content--article-header-category-link {
           background-position: center;
           background-repeat: no-repeat;
@@ -39,8 +40,20 @@
           max-height: 4em;
           max-width: 4em;
           overflow: hidden;
-          text-indent: 100%;
+          text-indent: 4.4em;
           white-space: nowrap; }
+          .home_content--article-header-category-link:hover {
+            overflow: visible;
+            text-indent: 4em; }
+        .home_content--article-header-category-tooltip {
+          background: #d5ecf5;
+          border: 1px dotted #091d25;
+          box-shadow: 0em 0em 0.6em -0.2em #091d25;
+          min-width: 1rem;
+          padding: .3rem;
+          text-align: center;
+          line-height: 3rem;
+          white-space: pre; }
     .home_content--article-body {
       border-top: 1px dotted #d5ecf5;
       flex-basis: 15em;
