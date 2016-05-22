@@ -1,0 +1,11 @@
+@import '_constant';
+
+.article-body {
+    padding: 1rem;
+    margin-top: 2rem;
+    box-shadow: 0.2rem 0.2rem 1.4rem -0.5rem $dark-color;
+}
+
+.article-comments {
+    display: flex;
+}

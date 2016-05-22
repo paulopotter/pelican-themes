@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <section class="home_content">
+    <section class="home_content column_wrapper">
       {% for article in articles_page.object_list %}
         {% if loop.index%5 != 0 %}
         <article class='home_content--article'>

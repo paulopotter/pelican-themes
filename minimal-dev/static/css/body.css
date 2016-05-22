@@ -6,7 +6,6 @@
   text-align: center;
   width: 100%; }
   .wrapper_site--content {
-    display: flex;
     height: 100%;
     margin: 0 auto 5rem;
     position: relative;
