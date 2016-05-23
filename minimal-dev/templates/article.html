@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 
+
 {% block header_site %}
   <a href="{{ SITEURL }}" class="header_site--title-link">{{ article.title }}</a>
 {% endblock header_site %}
@@ -9,6 +10,7 @@
       {{category}}
     {% endfor %} #}
     <section class="article-body">{{ article.content }}</section>
+
     <section class="article-comments">
       <h4>Comentarios</h4>
       {% if article.disqus_comments %}
