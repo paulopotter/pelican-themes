@@ -80,5 +80,12 @@ pre {
   background-color: inherit;
   font-style: inherit;
   text-decoration: inherit;
-  font-weight: inherit;
-}
+  font-weight: inherit; }
+
+.highlighttable,
+.highlight {
+  width: 100%; }
+
+.linenos {
+  width: 2%;
+  text-align: center; }
