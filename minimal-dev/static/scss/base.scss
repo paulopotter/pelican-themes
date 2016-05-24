@@ -34,7 +34,7 @@ a {
   margin: 0 auto;
   position: relative;
   transition: width linear 0.5s;
-  
+
   @include max-large(){
     width: 1200px;
   }
@@ -56,4 +56,14 @@ a {
     -moz-transition: all .25s linear;
     -ms-transition: all .25s linear;
     transition: all .25s linear;
+}
+
+pre {
+  color: inherit;
+  background: inherit;
+  background-color: inherit;
+  font-style: inherit;
+  text-decoration: inherit;
+  font-weight: inherit;
+
 }
