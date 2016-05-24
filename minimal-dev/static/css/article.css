@@ -40,6 +40,12 @@
       background-color: #d5ecf5;
       color: #144355;
       border-bottom: 2px dashed #56b3d7; }
+  .article-body blockquote {
+    background: #f9f9f9;
+    border-left: 5px solid #ccc;
+    margin: 1em;
+    padding: 0em 5px;
+    position: relative; }
 
 .article-comments {
   display: flex; }
