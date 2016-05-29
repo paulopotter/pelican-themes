@@ -3,7 +3,9 @@
 {% block content %}
     <section class="home_content column_wrapper">
       {% for article in articles_page.object_list %}
-        {% if loop.index%5 != 0 %}
+        {% if loop.index%5 == 0 %}
+          <div class="adsense"></div>
+        {% endif %}
         <article class='home_content--article'>
           <header class="home_content--article-header">
 
@@ -33,9 +35,6 @@
             {% endif %}
           </footer>
         </article>
-        {% else %}
-        <div class="adsense"></div>
-        {% endif %}
       {% endfor %}
     </section>
 {% endblock %}
