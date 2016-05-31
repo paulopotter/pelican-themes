@@ -68,6 +68,5 @@
       text-align: right; }
   .home_content .adsense {
     display: block;
-    width: 100%;
-    background: #eee;
-    margin-top: 30px; }
+    margin-top: 30px;
+    width: 100%; }
